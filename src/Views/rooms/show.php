@@ -1,0 +1,3 @@
+<div class="page-head"><h1><?= e($room['room_name'] ?? 'Phòng') ?></h1><a class="btn secondary" href="/rooms">Quay lại</a></div>
+<div class="panel"><p><b>Tòa:</b> <?= e($room['building'] ?? '') ?></p><p><b>Tầng:</b> <?= e($room['floor'] ?? '') ?></p><p><b>Sức chứa:</b> <?= e($room['capacity'] ?? '') ?></p><p><b>Loại:</b> <?= e($room['room_type'] ?? '') ?></p></div>
+<div class="panel"><h2>Tiện ích</h2><table><tr><th>Tên</th><th>Số lượng</th><th>Hoạt động</th><th>Trạng thái</th><th>Ghi chú</th></tr><?php foreach ($amenities as $item): ?><tr><td><?= e($item['name']) ?></td><td><?= e($item['quantity']) ?></td><td><?= e($item['working_quantity']) ?></td><td><?= e($item['status']) ?></td><td><?= e($item['note']) ?></td></tr><?php endforeach; ?></table></div>

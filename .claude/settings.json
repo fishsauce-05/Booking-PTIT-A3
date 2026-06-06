@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mysql -u root -p123456 -e \"SELECT 1;\")",
+      "Bash(mysql -u root -e \"SELECT 1;\")",
+      "Read(//c/xampp/apache/conf/**)"
+    ]
+  }
+}
